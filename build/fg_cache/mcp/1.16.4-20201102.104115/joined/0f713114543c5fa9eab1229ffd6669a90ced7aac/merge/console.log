@@ -1,0 +1,5 @@
+JVM Args:    
+Run Args:    "--client", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/stripClient/output.jar", "--server", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/stripServer/output.jar", "--ann", "1.16.4", "--output", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/merge/output.jar", "--inject", "false"
+Classpath:   /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/mergetool/1.1.1/mergetool-1.1.1-fatjar.jar
+Working Dir: /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/merge
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger

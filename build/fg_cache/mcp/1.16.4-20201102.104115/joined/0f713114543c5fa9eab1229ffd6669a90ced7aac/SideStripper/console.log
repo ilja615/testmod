@@ -1,0 +1,8 @@
+JVM Args:    
+Run Args:    "--strip", "--input", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/AccessTransformer/output.jar", "--output", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/SideStripper/output.jar", "--data", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/SideStripper/string_data.sas"
+Classpath:   /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/mergetool/1.0.7/mergetool-1.0.7-fatjar.jar
+Working Dir: /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/SideStripper
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
+Input:  /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/AccessTransformer/output.jar
+Output: /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/SideStripper/output.jar
+Data:   /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/SideStripper/string_data.sas

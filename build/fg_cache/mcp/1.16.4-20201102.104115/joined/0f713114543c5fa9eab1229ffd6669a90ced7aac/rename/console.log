@@ -1,0 +1,8 @@
+JVM Args:    
+Run Args:    "--in-jar", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/merge/output.jar", "--out-jar", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/rename/output.jar", "--srg-in", "config/joined.tsrg"
+Classpath:   /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/md-5/SpecialSource/1.8.3/SpecialSource-1.8.3-shaded.jar
+Working Dir: /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/rename
+Main Class:  net.md_5.specialsource.SpecialSource
+Loading mappings
+0 packages, 5447 classes, 21481 fields, 38358 methods
+Remapping final jar

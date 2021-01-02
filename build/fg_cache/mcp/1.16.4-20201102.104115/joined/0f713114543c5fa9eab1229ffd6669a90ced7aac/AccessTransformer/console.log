@@ -1,0 +1,5 @@
+JVM Args:    
+Run Args:    "--inJar", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/mcinject/output.jar", "--outJar", "/Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/AccessTransformer/output.jar", "--atFile", "/Users/Ilja/Documents/mc alles/testmod/src/main/resources/META-INF/accesstransformer.cfg", "--atFile", "/var/folders/xs/lyyss2vn6h73mnr3dhs5n3pm0000gp/T/FG_ats_2827955728027124391.cfg"
+Classpath:   /Users/Ilja/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/1.0.5/accesstransformers-1.0.5-fatjar.jar
+Working Dir: /Users/Ilja/Documents/mc alles/testmod/build/fg_cache/mcp/1.16.4-20201102.104115/joined/0f713114543c5fa9eab1229ffd6669a90ced7aac/AccessTransformer
+Main Class:  net.minecraftforge.accesstransformer.TransformerProcessor
