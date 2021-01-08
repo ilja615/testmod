@@ -1,0 +1,7 @@
+{
+  "death.attack.auroraCursedSnow": "%1$s was enchanted to death by a cursed snow block",
+  "death.attack.spikySnow.player": "%1$s was enchanted to death by a cursed snow block whilst trying to escape %2$s",
+  "block.testmod.aurora_cursed_snow_block": "Aurora Cursed Snow Block",
+  "item.testmod.aurora_cursed_snowball": "Snowball Empowered",
+  "entity.testmod.snowman": "Powerfull Snow Man"
+}
