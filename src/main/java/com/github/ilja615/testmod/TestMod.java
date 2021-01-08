@@ -35,6 +35,8 @@ public class TestMod
         ModStuffRegistry.BLOCKS.register(modEventBus);
         ModStuffRegistry.ENTITY_TYPES.register(modEventBus);
         ModStuffRegistry.FEATURES.register(modEventBus);
+        ModStuffRegistry.CONTAINER_TYPES.register(modEventBus);
+        ModStuffRegistry.TILES_ENTITIES.register(modEventBus);
     }
 
     private void setupCommon(final FMLCommonSetupEvent event)
@@ -58,7 +60,7 @@ public class TestMod
                 blockItem.setRegistryName(block.getRegistryName());
                 registry.register(blockItem);
             });
-            event.getRegistry().registerAll(ModStuffRegistry.registerEntitySpawnEgg(ModStuffRegistry.S, 0xffffff, 0x121212, "snowman_egg"));
+            event.getRegistry().registerAll(ModStuffRegistry.registerEntitySpawnEgg(ModStuffRegistry.S, 0xffffff, 0xAEC2E0, "snowman_egg"));
         }
     }
 }

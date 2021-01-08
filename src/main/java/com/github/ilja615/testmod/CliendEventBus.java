@@ -5,10 +5,8 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.FogRenderer;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.WorldVertexBufferUploader;
+import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.renderer.vertex.VertexBuffer;
 import net.minecraft.client.world.ClientWorld;
@@ -45,6 +43,10 @@ public class CliendEventBus {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void clientSetup(FMLClientSetupEvent event)
     {
+        ScreenManager.registerFactory(ModStuffRegistry.GIFT_BOX_CONTAINER.get(), GiftboxScreen::new);
+        RenderTypeLookup.setRenderLayer(ModStuffRegistry.GIFTBOX.get(), RenderType.getCutout());
+
+
         DimensionRenderInfo.field_239208_a_.remove(DimensionType.OVERWORLD_ID);
         DimensionRenderInfo.field_239208_a_.put(DimensionType.OVERWORLD_ID,
         // cloudHeight, alternate sky color, fog type, render sky, diffuse lighting

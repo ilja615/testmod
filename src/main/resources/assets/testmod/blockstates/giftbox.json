@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "testmod:block/giftbox_1"
+      },
+      {
+        "model": "testmod:block/giftbox_2"
+      },
+      {
+        "model": "testmod:block/giftbox_3"
+      }
+    ]
+  }
+}

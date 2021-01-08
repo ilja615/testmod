@@ -1,0 +1,177 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 8-1-21 18:53
+Description: Feature placement
+
+java.lang.NullPointerException: Feature placement
+	at com.github.ilja615.testmod.CampfireFeature.generate(CampfireFeature.java:68) ~[?:?] {re:classloading}
+	at com.github.ilja615.testmod.CampfireFeature.generate(CampfireFeature.java:26) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.func_242772_a(SourceFile:23) ~[?:?] {re:classloading}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:419) ~[?:1.8.0_131] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_131] {}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:22) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:14) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.func_242772_a(SourceFile:23) ~[?:?] {re:classloading}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:1.8.0_131] {}
+	at java.util.stream.IntPipeline$4$1.accept(IntPipeline.java:250) ~[?:1.8.0_131] {}
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110) ~[?:1.8.0_131] {}
+	at java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:693) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_131] {}
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:1.8.0_131] {}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_131] {}
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418) ~[?:1.8.0_131] {}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:22) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:14) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.biome.Biome.generateFeatures(Biome.java:254) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.gen.ChunkGenerator.func_230351_a_(SourceFile:220) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$9(ChunkStatus.java:77) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.chunk.ChunkStatus.doGenerationWork(ChunkStatus.java:198) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:524) ~[?:?] {re:classloading}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-4.0.26.jar:?] {re:classloading,re:classloading}
+	at net.minecraft.world.server.ChunkManager.lambda$chunkGenerate$20(ChunkManager.java:522) ~[?:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture.uniCompose(CompletableFuture.java:952) ~[?:1.8.0_131] {}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:926) ~[?:1.8.0_131] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_131] {}
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.func_219083_b(SourceFile:58) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveOne(SourceFile:94) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveWhile(SourceFile:137) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.run(SourceFile:105) ~[?:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402) ~[?:1.8.0_131] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_131] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_131] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_131] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_131] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.github.ilja615.testmod.CampfireFeature.generate(CampfireFeature.java:68) ~[?:?] {re:classloading}
+	at com.github.ilja615.testmod.CampfireFeature.generate(CampfireFeature.java:26) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.func_242772_a(SourceFile:23) ~[?:?] {re:classloading}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:419) ~[?:1.8.0_131] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_131] {}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:22) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:14) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.func_242772_a(SourceFile:23) ~[?:?] {re:classloading}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:1.8.0_131] {}
+	at java.util.stream.IntPipeline$4$1.accept(IntPipeline.java:250) ~[?:1.8.0_131] {}
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110) ~[?:1.8.0_131] {}
+	at java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:693) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_131] {}
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:1.8.0_131] {}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:1.8.0_131] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_131] {}
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418) ~[?:1.8.0_131] {}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:22) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.DecoratedFeature.generate(SourceFile:14) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.ConfiguredFeature.generate(SourceFile:55) ~[?:?] {re:classloading}
+-- Feature --
+Details:
+	Id: minecraft:decorated
+	Config: < DecoratedFeatureConfig [minecraft:decorated | [minecraft:count_extra net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig@2b111954]] >
+	Description: < DecoratedFeature [minecraft:decorated] >
+Stacktrace:
+	at net.minecraft.world.biome.Biome.generateFeatures(Biome.java:254) ~[?:?] {re:classloading,pl:accesstransformer:B}
+
+
+-- Generation --
+Details:
+	CenterX: 2
+	CenterZ: -10
+	Seed: 5479636027279830372
+	Biome: net.minecraft.world.biome.Biome@ca7e37f
+Stacktrace:
+	at net.minecraft.world.gen.ChunkGenerator.func_230351_a_(SourceFile:220) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$9(ChunkStatus.java:77) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.chunk.ChunkStatus.doGenerationWork(ChunkStatus.java:198) ~[?:?] {re:classloading,pl:accesstransformer:B}
+
+
+-- Chunk to be generated --
+Details:
+	Location: 2,-10
+	Position hash: -42949672958
+	Generator: net.minecraft.world.gen.NoiseChunkGenerator@2dad9056
+Stacktrace:
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:524) ~[?:?] {re:classloading}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-4.0.26.jar:?] {re:classloading,re:classloading,re:classloading}
+	at net.minecraft.world.server.ChunkManager.lambda$chunkGenerate$20(ChunkManager.java:522) ~[?:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture.uniCompose(CompletableFuture.java:952) ~[?:1.8.0_131] {}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:926) ~[?:1.8.0_131] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_131] {}
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.func_219083_b(SourceFile:58) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveOne(SourceFile:94) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveWhile(SourceFile:137) ~[?:?] {re:classloading}
+
+
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 529
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (40,64,-136), Chunk: (at 8,4,8 in 2,-9; contains blocks 32,0,-144 to 47,255,-129), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 0 game time, 0 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_240787_a_(MinecraftServer.java:353) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_240800_l__(MinecraftServer.java:308) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:60) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:620) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:232) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Mac OS X (x86_64) version 10.15.7
+	Java Version: 1.8.0_131, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 637343408 bytes (607 MB) / 992477184 bytes (946 MB) up to 1908932608 bytes (1820 MB)
+	CPUs: 4
+	JVM Flags: 1 total; -Xss1M
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.5-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 35.1
+	Forge: net.minecraftforge:35.1.28
+	FML Language Providers: 
+		javafml@35.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.4              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16|Forge                         |forge                         |35.1.28             |DONE      |NOSIGNATURE
+		main                                              |testMod                       |testmod                       |1.16.4-0.1          |DONE      |NOSIGNATURE
+	Crash Report UUID: 96325f4e-0110-4fb3-920b-ed03b293ee0d
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:forge, mod:testmod
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
