@@ -1,361 +1,256 @@
-[08jan2021 21:37:21.391] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.28, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[08jan2021 21:37:21.398] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_131 by Oracle Corporation
-[08jan2021 21:37:21.433] [main/WARN] [cpw.mods.modlauncher.SecureJarHandler/]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
-[08jan2021 21:37:22.071] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[08jan2021 21:37:22.172] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/Users/Ilja/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
-[08jan2021 21:37:26.768] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[08jan2021 21:37:41.521] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[08jan2021 21:37:42.158] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+[09jan2021 09:54:15.275] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.28, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[09jan2021 09:54:15.291] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_131 by Oracle Corporation
+[09jan2021 09:54:15.367] [main/WARN] [cpw.mods.modlauncher.SecureJarHandler/]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
+[09jan2021 09:54:16.842] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[09jan2021 09:54:17.208] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/Users/Ilja/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[09jan2021 09:54:27.680] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /Users/Ilja/.gradle/caches/forge_gradle/assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[09jan2021 09:55:03.300] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09jan2021 09:55:04.301] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationException: Unauthorized
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:119) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:94) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:152) ~[authlib-2.1.28.jar:?]
-	at net.minecraft.client.Minecraft.func_244735_a(Minecraft.java:551) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar:?]
-	at net.minecraft.client.Minecraft.<init>(Minecraft.java:383) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar:?]
+	at net.minecraft.client.Minecraft.func_244735_a(Minecraft.java:556) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:388) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
-	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar:?]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
 	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?]
 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?]
 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?]
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?]
-	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar:?]
-[08jan2021 21:37:42.173] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[08jan2021 21:37:43.835] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.1 build 12
-[08jan2021 21:37:44.525] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.28, for MC 1.16.4 with MCP 20201102.104115
-[08jan2021 21:37:44.525] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.28 Initialized
-[08jan2021 21:37:44.557] [modloading-worker-1/ERROR] [net.minecraft.util.Util/]: No data fixer registered for testmod:snowman
-[08jan2021 21:37:44.951] [Render thread/ERROR] [net.minecraft.util.Util/]: No data fixer registered for testmod:snowball
-[08jan2021 21:37:48.249] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[08jan2021 21:37:48.327] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[08jan2021 21:37:48.838] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 35.1.28 Target: 35.1.36
-[08jan2021 21:38:04.037] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[08jan2021 21:38:04.043] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[08jan2021 21:38:04.894] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[08jan2021 21:38:04.927] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[08jan2021 21:38:04.928] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[08jan2021 21:38:04.930] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[08jan2021 21:38:04.932] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[08jan2021 21:38:04.933] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[08jan2021 21:38:04.934] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[08jan2021 21:38:06.021] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[08jan2021 21:38:06.025] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[08jan2021 21:38:06.026] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[08jan2021 21:38:06.700] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[08jan2021 21:38:13.111] [Render thread/INFO] [net.minecraft.world.storage.SaveFormat/]: Attempt 1...
-[08jan2021 21:38:13.954] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ice_spikes
-[08jan2021 21:38:13.962] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp_hills
-[08jan2021 21:38:13.969] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ocean
-[08jan2021 21:38:13.972] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp
-[08jan2021 21:38:13.976] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_cold_ocean
-[08jan2021 21:38:13.979] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:gravelly_mountains
-[08jan2021 21:38:13.982] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:cold_ocean
-[08jan2021 21:38:13.999] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:lukewarm_ocean
-[08jan2021 21:38:14.027] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_hills
-[08jan2021 21:38:14.031] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_ocean
-[08jan2021 21:38:14.040] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:flower_forest
-[08jan2021 21:38:14.083] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_hills
-[08jan2021 21:38:14.086] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest_hills
-[08jan2021 21:38:14.100] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_mountains
-[08jan2021 21:38:14.108] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_field_shore
-[08jan2021 21:38:14.120] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga_hills
-[08jan2021 21:38:14.133] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_fields
-[08jan2021 21:38:14.171] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:stone_shore
-[08jan2021 21:38:14.174] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountain_edge
-[08jan2021 21:38:14.177] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_lukewarm_ocean
-[08jan2021 21:38:14.186] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:plains
-[08jan2021 21:38:14.188] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_tundra
-[08jan2021 21:38:14.210] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_ocean
-[08jan2021 21:38:14.214] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_gravelly_mountains
-[08jan2021 21:38:14.220] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_warm_ocean
-[08jan2021 21:38:14.222] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_river
-[08jan2021 21:38:14.228] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_forest
-[08jan2021 21:38:14.238] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_frozen_ocean
-[08jan2021 21:38:14.243] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_hills
-[08jan2021 21:38:14.246] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle
-[08jan2021 21:38:14.248] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_mountains
-[08jan2021 21:38:14.255] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_edge
-[08jan2021 21:38:14.262] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga
-[08jan2021 21:38:14.268] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_mountains
-[08jan2021 21:38:14.271] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga_hills
-[08jan2021 21:38:14.277] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:river
-[08jan2021 21:38:14.281] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:beach
-[08jan2021 21:38:14.284] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle
-[08jan2021 21:38:14.288] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga
-[08jan2021 21:38:14.295] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle_edge
-[08jan2021 21:38:14.297] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_hills
-[08jan2021 21:38:14.300] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest
-[08jan2021 21:38:14.310] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountains
-[08jan2021 21:38:14.312] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle
-[08jan2021 21:38:14.315] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle_hills
-[08jan2021 21:38:14.326] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga
-[08jan2021 21:38:14.346] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest
-[08jan2021 21:38:14.348] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga
-[08jan2021 21:38:14.353] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_hills
-[08jan2021 21:38:14.361] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:sunflower_plains
-[08jan2021 21:38:14.363] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_mountains
-[08jan2021 21:38:14.372] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_beach
-[08jan2021 21:38:14.375] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:warm_ocean
-[08jan2021 21:38:14.377] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest_hills
-[08jan2021 21:38:14.379] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:forest
-[08jan2021 21:38:16.922] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[08jan2021 21:38:16.925] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08jan2021 21:38:16.928] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08jan2021 21:38:16.931] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[08jan2021 21:38:16.934] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08jan2021 21:38:16.941] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3.jar, main
-[08jan2021 21:38:19.439] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
-[08jan2021 21:38:22.314] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
-[08jan2021 21:38:24.119] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[08jan2021 21:38:24.220] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.4
-[08jan2021 21:38:24.221] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[08jan2021 21:38:24.435] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./saves/New World (1)/serverconfig/forge-server.toml is not correct. Correcting
-[08jan2021 21:38:24.437] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to SimpleCommentedConfig:{}
-[08jan2021 21:38:24.437] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to false
-[08jan2021 21:38:24.437] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringTileEntities was corrected from null to false
-[08jan2021 21:38:24.438] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to false
-[08jan2021 21:38:24.438] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to 0.1
-[08jan2021 21:38:24.438] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to 0.05
-[08jan2021 21:38:24.438] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.logCascadingWorldGeneration was corrected from null to true
-[08jan2021 21:38:24.439] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixVanillaCascading was corrected from null to false
-[08jan2021 21:38:24.440] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.dimensionUnloadQueueDelay was corrected from null to 0
-[08jan2021 21:38:24.440] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.treatEmptyTagsAsAir was corrected from null to false
-[08jan2021 21:38:24.440] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixAdvancementLoading was corrected from null to true
-[08jan2021 21:38:37.180] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[08jan2021 21:38:37.413] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:37.771] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:38.233] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:38.736] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:39.283] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:39.733] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:40.244] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:40.732] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:41.291] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:41.745] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:42.241] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:42.731] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[08jan2021 21:38:43.240] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 2%
-[08jan2021 21:38:43.741] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 2%
-[08jan2021 21:38:44.238] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 2%
-[08jan2021 21:38:44.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 2%
-[08jan2021 21:38:45.223] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 2%
-[08jan2021 21:38:45.740] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 4%
-[08jan2021 21:38:46.224] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[08jan2021 21:38:46.735] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[08jan2021 21:38:47.226] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[08jan2021 21:38:47.731] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[08jan2021 21:38:48.240] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:48.743] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:49.221] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:49.735] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:50.217] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:50.733] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 6%
-[08jan2021 21:38:53.434] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[08jan2021 21:38:53.436] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[08jan2021 21:38:53.436] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[08jan2021 21:38:53.436] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[08jan2021 21:38:53.436] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
-[08jan2021 21:38:53.746] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 10%
-[08jan2021 21:38:54.233] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 10%
-[08jan2021 21:38:54.722] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 10%
-[08jan2021 21:38:55.221] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:55.747] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:56.248] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:56.736] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:57.242] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:57.730] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:58.247] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:58.730] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:59.232] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 11%
-[08jan2021 21:38:59.743] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:00.232] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:00.733] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:01.248] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:01.744] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:02.245] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 16%
-[08jan2021 21:39:02.733] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 18%
-[08jan2021 21:39:03.221] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 19%
-[08jan2021 21:39:03.752] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 19%
-[08jan2021 21:39:05.674] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 19%
-[08jan2021 21:39:05.674] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 19%
-[08jan2021 21:39:05.674] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 19%
-[08jan2021 21:39:05.781] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 22%
-[08jan2021 21:39:07.719] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
-[08jan2021 21:39:07.721] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
-[08jan2021 21:39:07.722] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
-[08jan2021 21:39:07.722] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
-[08jan2021 21:39:10.013] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
-[08jan2021 21:39:10.014] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
-[08jan2021 21:39:10.014] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
-[08jan2021 21:39:10.014] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
-[08jan2021 21:39:10.324] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 32%
-[08jan2021 21:39:13.466] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 32%
-[08jan2021 21:39:13.466] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 32%
-[08jan2021 21:39:13.466] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 33%
-[08jan2021 21:39:13.467] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 33%
-[08jan2021 21:39:13.467] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 33%
-[08jan2021 21:39:13.467] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 33%
-[08jan2021 21:39:14.091] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 42%
-[08jan2021 21:39:14.312] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 45%
-[08jan2021 21:39:15.921] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 46%
-[08jan2021 21:39:15.925] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 46%
-[08jan2021 21:39:15.925] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 46%
-[08jan2021 21:39:17.524] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 50%
-[08jan2021 21:39:17.524] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 50%
-[08jan2021 21:39:17.524] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 50%
-[08jan2021 21:39:17.904] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 56%
-[08jan2021 21:39:18.788] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 57%
-[08jan2021 21:39:18.788] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 57%
-[08jan2021 21:39:19.229] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 65%
-[08jan2021 21:39:19.724] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 67%
-[08jan2021 21:39:20.471] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 67%
-[08jan2021 21:39:21.033] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 69%
-[08jan2021 21:39:21.825] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 71%
-[08jan2021 21:39:21.826] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 71%
-[08jan2021 21:39:23.110] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 73%
-[08jan2021 21:39:23.110] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 73%
-[08jan2021 21:39:23.257] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 77%
-[08jan2021 21:39:27.085] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.086] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.087] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.087] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.087] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.087] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.087] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 79%
-[08jan2021 21:39:27.328] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 85%
-[08jan2021 21:39:28.517] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 86%
-[08jan2021 21:39:28.518] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 86%
-[08jan2021 21:39:30.522] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 90%
-[08jan2021 21:39:30.522] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 90%
-[08jan2021 21:39:30.522] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 90%
-[08jan2021 21:39:30.522] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 90%
-[08jan2021 21:39:30.576] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 53360 ms
-[08jan2021 21:39:30.935] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[08jan2021 21:39:32.181] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[08jan2021 21:39:32.214] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@2589c963
-[08jan2021 21:39:32.242] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:90167d1c] logged in with entity id 236 at (-144.5, 67.0, 225.5)
-[08jan2021 21:39:32.285] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ice_spikes
-[08jan2021 21:39:32.294] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp_hills
-[08jan2021 21:39:32.297] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ocean
-[08jan2021 21:39:32.299] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp
-[08jan2021 21:39:32.300] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_cold_ocean
-[08jan2021 21:39:32.304] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:gravelly_mountains
-[08jan2021 21:39:32.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[08jan2021 21:39:32.307] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:cold_ocean
-[08jan2021 21:39:32.309] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:lukewarm_ocean
-[08jan2021 21:39:32.318] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_hills
-[08jan2021 21:39:32.320] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_ocean
-[08jan2021 21:39:32.324] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:flower_forest
-[08jan2021 21:39:32.328] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_hills
-[08jan2021 21:39:32.330] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest_hills
-[08jan2021 21:39:32.331] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_mountains
-[08jan2021 21:39:32.333] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_field_shore
-[08jan2021 21:39:32.335] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga_hills
-[08jan2021 21:39:32.339] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_fields
-[08jan2021 21:39:32.341] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:stone_shore
-[08jan2021 21:39:32.344] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountain_edge
-[08jan2021 21:39:32.345] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_lukewarm_ocean
-[08jan2021 21:39:32.349] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:plains
-[08jan2021 21:39:32.350] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_tundra
-[08jan2021 21:39:32.360] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_ocean
-[08jan2021 21:39:32.362] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_gravelly_mountains
-[08jan2021 21:39:32.367] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_warm_ocean
-[08jan2021 21:39:32.369] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_river
-[08jan2021 21:39:32.377] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_forest
-[08jan2021 21:39:32.382] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_frozen_ocean
-[08jan2021 21:39:32.386] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_hills
-[08jan2021 21:39:32.388] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle
-[08jan2021 21:39:32.390] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_mountains
-[08jan2021 21:39:32.391] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_edge
-[08jan2021 21:39:32.393] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga
-[08jan2021 21:39:32.394] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_mountains
-[08jan2021 21:39:32.396] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga_hills
-[08jan2021 21:39:32.397] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:river
-[08jan2021 21:39:32.399] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:beach
-[08jan2021 21:39:32.400] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle
-[08jan2021 21:39:32.401] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga
-[08jan2021 21:39:32.403] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle_edge
-[08jan2021 21:39:32.404] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_hills
-[08jan2021 21:39:32.406] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest
-[08jan2021 21:39:32.408] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountains
-[08jan2021 21:39:32.410] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle
-[08jan2021 21:39:32.412] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle_hills
-[08jan2021 21:39:32.415] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga
-[08jan2021 21:39:32.418] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest
-[08jan2021 21:39:32.420] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga
-[08jan2021 21:39:32.422] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_hills
-[08jan2021 21:39:32.428] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:sunflower_plains
-[08jan2021 21:39:32.429] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_mountains
-[08jan2021 21:39:32.431] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_beach
-[08jan2021 21:39:32.432] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:warm_ocean
-[08jan2021 21:39:32.434] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest_hills
-[08jan2021 21:39:32.436] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:forest
-[08jan2021 21:39:32.698] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[08jan2021 21:39:32.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08jan2021 21:39:34.993] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08jan2021 21:39:34.994] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08jan2021 21:39:35.072] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2805ms or 56 ticks behind
-[08jan2021 21:39:39.392] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[08jan2021 21:39:49.900] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[08jan2021 21:39:49.905] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08jan2021 21:39:52.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08jan2021 21:39:52.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08jan2021 21:39:52.349] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2282ms or 45 ticks behind
-[08jan2021 21:40:11.196] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3878ms or 77 ticks behind
-[08jan2021 21:40:28.621] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
-[08jan2021 21:40:51.882] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2013ms or 40 ticks behind
-[08jan2021 21:41:09.258] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2388ms or 47 ticks behind
-[08jan2021 21:41:30.219] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5999ms or 119 ticks behind
-[08jan2021 21:41:50.346] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5175ms or 103 ticks behind
-[08jan2021 21:42:08.961] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3639ms or 72 ticks behind
-[08jan2021 21:42:30.044] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6123ms or 122 ticks behind
-[08jan2021 21:42:56.607] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 11584ms or 231 ticks behind
-[08jan2021 21:43:22.325] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 10752ms or 215 ticks behind
-[08jan2021 21:43:45.142] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 7818ms or 156 ticks behind
-[08jan2021 21:44:07.457] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 7332ms or 146 ticks behind
-[08jan2021 21:44:18.423] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 3 advancements
-[08jan2021 21:44:19.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Suit Up]
-[08jan2021 21:44:19.556] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Suit Up]
-[08jan2021 21:44:19.557] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 9 advancements
-[08jan2021 21:44:26.918] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4493ms or 89 ticks behind
-[08jan2021 21:44:35.342] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 10 advancements
-[08jan2021 21:44:48.139] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6264ms or 125 ticks behind
-[08jan2021 21:44:53.670] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[08jan2021 21:44:53.671] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
-[08jan2021 21:44:57.180] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[08jan2021 21:45:11.783] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 8657ms or 173 ticks behind
-[08jan2021 21:45:33.627] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6850ms or 137 ticks behind
-[08jan2021 21:45:46.442] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 22 advancements
-[08jan2021 21:45:56.333] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 7706ms or 154 ticks behind
-[08jan2021 21:45:57.586] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 36 advancements
-[08jan2021 21:46:20.401] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 9072ms or 181 ticks behind
-[08jan2021 21:46:44.352] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 8972ms or 179 ticks behind
-[08jan2021 21:47:12.161] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 12831ms or 256 ticks behind
-[08jan2021 21:47:19.867] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 36 advancements
-[08jan2021 21:47:38.355] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 11224ms or 224 ticks behind
-[08jan2021 21:47:44.809] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 42 advancements
-[08jan2021 21:47:48.019] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[08jan2021 21:47:48.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08jan2021 21:47:50.351] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08jan2021 21:47:50.353] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08jan2021 21:47:50.435] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[08jan2021 21:47:50.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[08jan2021 21:47:50.449] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[08jan2021 21:47:50.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[08jan2021 21:47:50.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[08jan2021 21:47:50.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[08jan2021 21:47:50.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08jan2021 21:47:52.931] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[08jan2021 21:47:52.932] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08jan2021 21:47:52.934] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[08jan2021 21:47:52.934] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08jan2021 21:47:52.935] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[08jan2021 21:47:52.971] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[08jan2021 21:47:52.983] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[08jan2021 21:47:52.984] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[08jan2021 21:48:26.580] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+[09jan2021 09:55:04.312] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[09jan2021 09:55:04.655] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.1 build 12
+[09jan2021 09:55:05.902] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.28, for MC 1.16.4 with MCP 20201102.104115
+[09jan2021 09:55:05.902] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.28 Initialized
+[09jan2021 09:55:05.957] [modloading-worker-2/ERROR] [net.minecraft.util.Util/]: No data fixer registered for testmod:snowman
+[09jan2021 09:55:06.572] [Render thread/ERROR] [net.minecraft.util.Util/]: No data fixer registered for testmod:snowball
+[09jan2021 09:55:11.183] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[09jan2021 09:55:11.255] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[09jan2021 09:55:11.795] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 35.1.28 Target: 35.1.36
+[09jan2021 09:55:33.290] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[09jan2021 09:55:33.294] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[09jan2021 09:55:34.804] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[09jan2021 09:55:34.882] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[09jan2021 09:55:34.884] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[09jan2021 09:55:34.889] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[09jan2021 09:55:34.898] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[09jan2021 09:55:34.899] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[09jan2021 09:55:34.902] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09jan2021 09:55:38.096] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[09jan2021 09:55:38.098] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09jan2021 09:55:38.098] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09jan2021 09:55:38.790] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[09jan2021 09:57:09.332] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountains
+[09jan2021 09:57:09.347] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:warm_ocean
+[09jan2021 09:57:09.351] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:cold_ocean
+[09jan2021 09:57:09.357] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_hills
+[09jan2021 09:57:09.365] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle
+[09jan2021 09:57:09.368] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest
+[09jan2021 09:57:09.373] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_lukewarm_ocean
+[09jan2021 09:57:09.375] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle_hills
+[09jan2021 09:57:09.381] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga
+[09jan2021 09:57:09.386] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga
+[09jan2021 09:57:09.393] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ice_spikes
+[09jan2021 09:57:09.398] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_hills
+[09jan2021 09:57:09.400] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle
+[09jan2021 09:57:09.403] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_frozen_ocean
+[09jan2021 09:57:09.418] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_river
+[09jan2021 09:57:09.422] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_mountains
+[09jan2021 09:57:09.424] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_field_shore
+[09jan2021 09:57:09.427] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest_hills
+[09jan2021 09:57:09.429] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga_hills
+[09jan2021 09:57:09.435] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_gravelly_mountains
+[09jan2021 09:57:09.453] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_warm_ocean
+[09jan2021 09:57:09.455] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle
+[09jan2021 09:57:09.461] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:beach
+[09jan2021 09:57:09.464] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_mountains
+[09jan2021 09:57:09.474] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga_hills
+[09jan2021 09:57:09.477] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:river
+[09jan2021 09:57:09.502] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_hills
+[09jan2021 09:57:09.508] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:stone_shore
+[09jan2021 09:57:09.509] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:lukewarm_ocean
+[09jan2021 09:57:09.543] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest
+[09jan2021 09:57:09.547] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_cold_ocean
+[09jan2021 09:57:09.549] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_hills
+[09jan2021 09:57:09.552] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_beach
+[09jan2021 09:57:09.554] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountain_edge
+[09jan2021 09:57:09.558] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_edge
+[09jan2021 09:57:09.563] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:plains
+[09jan2021 09:57:09.565] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest_hills
+[09jan2021 09:57:09.602] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:flower_forest
+[09jan2021 09:57:09.607] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp_hills
+[09jan2021 09:57:09.609] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_mountains
+[09jan2021 09:57:09.612] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_mountains
+[09jan2021 09:57:09.613] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga
+[09jan2021 09:57:09.615] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_fields
+[09jan2021 09:57:09.616] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga
+[09jan2021 09:57:09.617] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_hills
+[09jan2021 09:57:09.619] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ocean
+[09jan2021 09:57:09.621] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_tundra
+[09jan2021 09:57:09.623] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:forest
+[09jan2021 09:57:09.624] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_forest
+[09jan2021 09:57:09.626] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp
+[09jan2021 09:57:09.627] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:sunflower_plains
+[09jan2021 09:57:09.629] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle_edge
+[09jan2021 09:57:09.630] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:gravelly_mountains
+[09jan2021 09:57:09.632] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_ocean
+[09jan2021 09:57:09.633] [Render thread/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_ocean
+[09jan2021 09:57:10.435] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09jan2021 09:57:10.437] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09jan2021 09:57:10.438] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09jan2021 09:57:10.440] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09jan2021 09:57:10.441] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09jan2021 09:57:10.449] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.4-35.1.28_mapped_snapshot_20201028-1.16.3-recomp.jar, main
+[09jan2021 09:57:11.935] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[09jan2021 09:57:13.328] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[09jan2021 09:57:13.805] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09jan2021 09:57:18.507] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09jan2021 09:57:18.574] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.4
+[09jan2021 09:57:18.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09jan2021 09:57:18.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09jan2021 09:57:20.987] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09jan2021 09:57:20.987] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09jan2021 09:57:20.987] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09jan2021 09:57:20.987] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09jan2021 09:57:21.062] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09jan2021 09:57:21.506] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 46%
+[09jan2021 09:57:28.727] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.727] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.727] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:28.728] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09jan2021 09:57:29.003] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[09jan2021 09:57:29.513] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[09jan2021 09:57:30.016] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[09jan2021 09:57:30.517] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[09jan2021 09:57:31.008] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 97%
+[09jan2021 09:57:31.523] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 99%
+[09jan2021 09:57:31.524] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 12521 ms
+[09jan2021 09:57:32.095] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[09jan2021 09:57:33.494] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[09jan2021 09:57:33.587] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6df9b6de
+[09jan2021 09:57:33.599] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountains
+[09jan2021 09:57:33.601] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:warm_ocean
+[09jan2021 09:57:33.603] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:cold_ocean
+[09jan2021 09:57:33.606] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_hills
+[09jan2021 09:57:33.611] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle
+[09jan2021 09:57:33.612] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest
+[09jan2021 09:57:33.615] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_lukewarm_ocean
+[09jan2021 09:57:33.616] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:bamboo_jungle_hills
+[09jan2021 09:57:33.619] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga
+[09jan2021 09:57:33.621] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga
+[09jan2021 09:57:33.623] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ice_spikes
+[09jan2021 09:57:33.624] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_hills
+[09jan2021 09:57:33.626] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle
+[09jan2021 09:57:33.629] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_frozen_ocean
+[09jan2021 09:57:33.636] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_river
+[09jan2021 09:57:33.639] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_mountains
+[09jan2021 09:57:33.645] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_field_shore
+[09jan2021 09:57:33.648] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:birch_forest_hills
+[09jan2021 09:57:33.650] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_spruce_taiga_hills
+[09jan2021 09:57:33.653] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_gravelly_mountains
+[09jan2021 09:57:33.657] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_warm_ocean
+[09jan2021 09:57:33.659] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle
+[09jan2021 09:57:33.661] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:beach
+[09jan2021 09:57:33.665] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_mountains
+[09jan2021 09:57:33.668] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga_hills
+[09jan2021 09:57:33.669] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:river
+[09jan2021 09:57:33.670] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_hills
+[09jan2021 09:57:33.671] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:stone_shore
+[09jan2021 09:57:33.673] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:lukewarm_ocean
+[09jan2021 09:57:33.674] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest
+[09jan2021 09:57:33.677] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_cold_ocean
+[09jan2021 09:57:33.679] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_hills
+[09jan2021 09:57:33.680] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:7dbae25a] logged in with entity id 705 at (-748.8990335422304, 76.0, 1039.300000011921)
+[09jan2021 09:57:33.691] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_beach
+[09jan2021 09:57:33.693] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mountain_edge
+[09jan2021 09:57:33.694] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:jungle_edge
+[09jan2021 09:57:33.700] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:plains
+[09jan2021 09:57:33.705] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:dark_forest_hills
+[09jan2021 09:57:33.712] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:flower_forest
+[09jan2021 09:57:33.714] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp_hills
+[09jan2021 09:57:33.715] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:wooded_mountains
+[09jan2021 09:57:33.726] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga_mountains
+[09jan2021 09:57:33.729] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:giant_tree_taiga
+[09jan2021 09:57:33.731] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:mushroom_fields
+[09jan2021 09:57:33.733] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_taiga
+[09jan2021 09:57:33.735] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:taiga_hills
+[09jan2021 09:57:33.737] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:ocean
+[09jan2021 09:57:33.738] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:snowy_tundra
+[09jan2021 09:57:33.741] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:forest
+[09jan2021 09:57:33.743] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:tall_birch_forest
+[09jan2021 09:57:33.744] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:swamp
+[09jan2021 09:57:33.746] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:sunflower_plains
+[09jan2021 09:57:33.748] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:modified_jungle_edge
+[09jan2021 09:57:33.749] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:gravelly_mountains
+[09jan2021 09:57:33.751] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:deep_ocean
+[09jan2021 09:57:33.752] [Netty Local Client IO #0/INFO] [STDOUT/]: [com.github.ilja615.testmod.EventThing$EventsForTheMod:biomeModification:32]: added snowy content to biome: minecraft:frozen_ocean
+[09jan2021 09:57:33.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09jan2021 09:57:34.303] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09jan2021 09:57:34.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09jan2021 09:57:36.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09jan2021 09:57:36.968] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09jan2021 09:57:37.013] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4548ms or 90 ticks behind
+[09jan2021 09:58:12.365] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 50 advancements
+[09jan2021 09:58:14.374] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2208ms or 44 ticks behind
+[09jan2021 09:58:24.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[09jan2021 09:58:24.389] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[09jan2021 09:58:52.552] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09jan2021 09:58:52.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09jan2021 09:58:55.897] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09jan2021 09:58:55.899] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09jan2021 09:59:03.195] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 33828ms or 676 ticks behind
+[09jan2021 09:59:27.813] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:27.823] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:32.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:32.497] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:32.581] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 14413ms or 288 ticks behind
+[09jan2021 09:59:34.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:35.001] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:38.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:38.210] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:39.260] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:39.270] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:40.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed every effect from Dev]
+[09jan2021 09:59:40.471] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Removed every effect from Dev
+[09jan2021 09:59:40.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was enchanted to death by a cursed snow block
+[09jan2021 09:59:40.532] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev was enchanted to death by a cursed snow block
+[09jan2021 09:59:47.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[09jan2021 09:59:47.153] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[09jan2021 09:59:49.223] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09jan2021 09:59:49.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09jan2021 09:59:49.855] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09jan2021 09:59:49.856] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09jan2021 09:59:49.952] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2384ms or 47 ticks behind
+[09jan2021 09:59:50.351] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[09jan2021 09:59:50.351] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09jan2021 09:59:50.357] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[09jan2021 09:59:50.382] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09jan2021 09:59:50.383] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09jan2021 09:59:50.384] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09jan2021 09:59:50.384] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09jan2021 09:59:53.320] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[09jan2021 09:59:53.320] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09jan2021 09:59:53.323] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09jan2021 09:59:53.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09jan2021 09:59:53.327] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09jan2021 09:59:53.352] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[09jan2021 09:59:53.356] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09jan2021 09:59:53.357] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09jan2021 09:59:55.081] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

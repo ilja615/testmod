@@ -26,7 +26,7 @@ public class EventThing
             if (event.getClimate().precipitation != Biome.RainType.NONE)
             {
                 event.setClimate(new Biome.Climate(Biome.RainType.SNOW, 0.0f, event.getClimate().temperatureModifier, 2.0f));
-                event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(ModStuffRegistry.SNOWMAN_ENTITY_TYPE.get(), 25, 1, 1));
+                event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(ModStuffRegistry.SNOWMAN_ENTITY_TYPE.get(), 10, 1, 1));
                 event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> ModStuffRegistry.CONFIGURED_FEATURE_LAZY_CAMP_FIRE.get());
 
                 System.out.println("added snowy content to biome: "+event.getName().toString());

@@ -1,4 +1,10 @@
 {
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2021-01-08 22:43:26 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget_from_blasting": {
     "criteria": {
       "has_iron_sword": "2021-01-08 21:44:18 +0100"
@@ -29,9 +35,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_nugget": "2021-01-08 22:43:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2021-01-08 22:45:22 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2021-01-08 22:43:32 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2021-01-08 21:47:44 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2021-01-08 22:43:32 +0100"
     },
     "done": true
   },
@@ -47,15 +77,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2021-01-08 22:43:26 +0100"
+    },
+    "done": true
+  },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "golden_apple": "2021-01-08 21:45:46 +0100"
     },
     "done": false
   },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2021-01-08 22:45:22 +0100"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2021-01-08 21:45:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_nugget": "2021-01-08 22:43:26 +0100"
     },
     "done": true
   },
@@ -80,7 +128,11 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:forest": "2021-01-08 21:41:07 +0100",
+      "minecraft:mountains": "2021-01-08 22:39:35 +0100",
+      "minecraft:birch_forest": "2021-01-08 22:40:08 +0100",
+      "minecraft:dark_forest": "2021-01-08 22:41:26 +0100",
       "minecraft:river": "2021-01-08 21:40:35 +0100",
+      "minecraft:birch_forest_hills": "2021-01-08 22:41:06 +0100",
       "minecraft:wooded_hills": "2021-01-08 21:39:32 +0100",
       "minecraft:plains": "2021-01-08 21:47:19 +0100"
     },

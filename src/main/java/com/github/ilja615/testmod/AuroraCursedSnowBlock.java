@@ -41,11 +41,14 @@ public class AuroraCursedSnowBlock extends Block
     @Override
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn)
     {
-        if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.SNOW_GOLEM && ((LivingEntity) entityIn).getActivePotionEffects().size() == 0)
+        if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.SNOW_GOLEM)
         {
             entityIn.attackEntityFrom(ModStuffRegistry.AURORA_CURSED_SNOW, 1.0F);
-            Effect effect = SOME_NEGATIVE_EFFECTS[worldIn.rand.nextInt(SOME_NEGATIVE_EFFECTS.length)];
-            ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(effect, 100, 1));
+            if (((LivingEntity) entityIn).getActivePotionEffects().size() == 0)
+            {
+                Effect effect = SOME_NEGATIVE_EFFECTS[worldIn.rand.nextInt(SOME_NEGATIVE_EFFECTS.length)];
+                ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(effect, 100, 1));
+            }
         }
     }
 }

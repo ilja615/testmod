@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: testmod
+Implementation-Version: 1.16.4-0.1
+Specification-Vendor: examplemodsareus
+Specification-Title: examplemod
+Implementation-Timestamp: 2021-01-09T09:43:50+0100
+Specification-Version: 1
+Implementation-Vendor: examplemodsareus
+
